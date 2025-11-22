@@ -10,15 +10,11 @@ from datetime import datetime, timedelta
 def display_current_datetime():
     """
     Obtain the current date and time, save it to `current_date`,
-    and print it formatted as "YYYY-MM-DD HH:MM:SS".
+    and return it formatted as "YYYY-MM-DD HH:MM:SS".
     """
-    # get current local datetime
     current_date = datetime.now()
-    # format for readable output
     formatted = current_date.strftime("%Y-%m-%d %H:%M:%S")
-    print(f"Current date and time: {formatted}")
-    # return the variable in case other code needs it
-    return current_date
+    return formatted
 
 def calculate_future_date(days):
     """
